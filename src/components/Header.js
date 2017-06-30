@@ -1,9 +1,9 @@
 import React, {Component}  from 'react';
 
-const Header = ()=> 
+const Header = (props)=> 
 (
     <h1 className="text-center">
-      NTP - Adress Book - SERGIO PAEZ
+      {props.title} 
     </h1>
 );
 
