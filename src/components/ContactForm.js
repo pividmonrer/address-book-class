@@ -5,28 +5,28 @@ const ContactForm= (props) => (
         <p>Nombre: </p>
         <input 
             type="text" 
-            value={props.firstName} 
+            value={props.nombre}
             onChange={props.handleFirstNameChange}
         />
          <p>Apellido: </p>    
          <input 
             type="text" 
-            value={props.lastName} 
+            value={props.apellido} 
             onChange={props.handleLastNameChange}
         />
 
          <p>Telefono: </p>
          <input 
             type="text" 
-            value={props.phone} 
+            value={props.telefono} 
             onChange={props.handlePhoneChange}
         />
         
         <div>
             <button className="btn btn-primary" onClick={() => props.saveContact({
-                firstName: props.firstName,
-                lastName: props.lastName,
-                phone: props.phone
+                nombre: props.nombre,
+                apellido: props.apellido,
+                telefono: props.telefono
                 })}
                 >
                 Guardar
